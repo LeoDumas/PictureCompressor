@@ -7,24 +7,26 @@ const Hero: React.FC = () => {
             <div className="container mx-auto px-4">
                 <div className="flex flex-col md:flex-row items-center justify-between">
                     <div className="md:w-1/2 mb-10 md:mb-0">
-                        <h1 className="text-4xl md:text-5xl font-bold mb-4">
+                        <h1 className="text-4xl md:text-5xl font-bold mb-4 text-center md:text-left">
                             SnapSqueeze
                         </h1>
-                        <h2 className="text-2xl md:text-3xl mb-6">
+                        <h2 className="text-2xl md:text-3xl mb-6 text-center md:text-left">
                             Compressez vos images en un clic !
                         </h2>
-                        <p className="text-lg mb-8">
+                        <p className="text-lg mb-8 text-center md:text-left">
                             Optimisez vos images sans compromettre la qualité. <br /> Rapide, facile et efficace.
                         </p>
-                        <a href="/compressor">
-                            <motion.button
-                                className="bg-slate-100 dark:bg-white text-blue-600 font-bold py-3 px-6 rounded-full hover:bg-blue-100 transition duration-300"
-                                whileHover={{ scale: 1.1 }}
-                                whileTap={{ scale: 0.9 }}
-                            >
-                                Commencer maintenant
-                            </motion.button>
-                        </a>
+                        <div className="flex justify-center md:justify-start">
+                            <a href="/compressor">
+                                <motion.button
+                                    className="bg-slate-100 dark:bg-white text-blue-600 font-bold py-3 px-6 rounded-full hover:bg-blue-100 transition duration-300"
+                                    whileHover={{ scale: 1.1 }}
+                                    whileTap={{ scale: 0.9 }}
+                                >
+                                    Commencer maintenant
+                                </motion.button>
+                            </a>
+                        </div>
 
                     </div>
                     <div className="md:w-1/2">
