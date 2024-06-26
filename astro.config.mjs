@@ -5,6 +5,8 @@ import tailwind from "@astrojs/tailwind";
 
 // https://astro.build/config
 export default defineConfig({
+  site: 'https://LeoDumas.github.io',
+  base: 'PictureCompressor',
   integrations: [
     react(),
     tailwind({
